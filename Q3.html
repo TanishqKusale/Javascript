@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3</title>
+  <script>
+    //Write a function  to list all even numbers less than or equal to the number n.Take the value of n as input from user. Use while loop
+    
+    function listEvenNumbers(){
+
+      let n=parseInt(prompt("Enter a number"));
+      if(!isNaN(n) && Number.isInteger(n) && n>=0)
+      {
+        let i=0;
+        document.write("Even numbers less than or equal to "+n+":<br>");
+        while(i<=n)
+        {
+          if(i%2===0)
+          {
+          document.write(i+"<br>")
+          }
+        i++
+        }
+      }
+      else
+      {("Please enter a valid non negative number");
+    }}
+  </script>
+</head>
+<body>
+  <script>
+    listEvenNumbers();
+  </script>
+</body>
+</html>

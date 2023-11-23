@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2</title>
+  <script>
+    // Accept an integer value and a message from user and print the message that many number of times
+    function printMessage(){
+    //Getting inputs
+    let count=parseInt(prompt("Enter an integer value: "));
+    let message=prompt("Enter a message");
+    
+    
+    //Check if count is a valid number
+  if(!isNaN(count) && Number.isInteger(count) && count>0)
+  {
+
+    //printing the message number of times of count
+    for(let i=0;i<count;i++)
+    {
+      document.write(message+"<br>")
+    }
+  } 
+  else 
+  {
+    document.write("Enter a number");
+  }
+}
+</script>
+</head>
+<body>
+  <script>
+    printMessage();
+    </script>
+    
+    
+</body>
+</html>
